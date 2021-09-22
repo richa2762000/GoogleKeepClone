@@ -1,0 +1,158 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing: border-box; */
+    background-color: gainsboro;
+    /* overflow: hidden; */
+    /* height: 1000px; */
+}
+header{
+    width: 95.4rem;
+    height: 8rem;
+    border: 2px solid black;
+    background-color: #f1c40f;
+}
+.heading{
+    margin-left: 40px;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+}
+.heading .fa{
+    color: black;
+}
+.note{
+    float: right;
+    width: 10rem;
+    height: 2rem;
+    /* border: 2px solid black; */
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.note1{
+    background-color: #f1c40f;
+    width: 100px;
+    height: 28px;
+    padding-left: 30px;
+    margin-top: -20px;
+    padding-top: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* border: 2px solid black; */
+    display: none;
+}
+.arrow{
+    /* margin-left: 10px; */
+    background-color: #f1c40f;
+    width: 2rem;
+    border-radius: 90px;
+    padding-left: 10px;
+}
+
+.note .fa{
+    cursor: pointer;
+}
+/* row */
+.row{
+    height: 240px;
+    width: 350px;
+    border: 2px solid black;
+    margin-top: 140px;
+    margin-left: 40px;
+    background-color: ghostwhite;
+    display: inline-block;
+}
+.operation{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    /* border: 2px solid black; */
+}
+
+.pen{
+    height: 20px;
+    width: 20px;
+    padding-left: 10px;
+    border-radius: 40px;
+    background-color: green;
+    color: whitesmoke;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.trash{
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    background-color: red;
+    color: whitesmoke;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.clean{
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    background-color:rgb(12, 12, 12,0.6);
+    color: white;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.operation .fa{
+    font-size: 15px;
+}
+.trash:hover{
+    background-color: whitesmoke;
+    color: red;
+}
+.pen:hover{
+    background-color: whitesmoke;
+    color: green;
+}
+.clean:hover{
+    background-color: white;
+    color: black;
+}
+/* main */
+.main{
+    width: 21.5rem;
+    height: 10rem;
+    /* border: 2px solid blue; */
+    word-wrap: break-word; 
+    position: absolute;
+    /* top: 15rem; */
+}
+textarea{
+    width: 21.5rem;
+    height: 10rem;
+    /* border: 1px solid red; */
+    border: none;
+    outline: none;
+    position: absolute;
+    /* top:15rem; */
+}
+
+.hidden{
+    display: none;
+}
+
+/* media query */
+@media screen and (max-width: 710px) {
+  body{
+      width: min-content;
+      height: min-content;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        width: 440px;
+    }
+    .row{
+        margin-right: 40px;
+    }
+} 
